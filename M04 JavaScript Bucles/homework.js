@@ -114,12 +114,7 @@ function esEntero(num) {
    // Ejemplo: 1     ---> true
    // Ejemplo: (-10) ---> true
    // De lo contrario, retorna false.
-   // Tu código:
-   if (Number.isInteger(num)) {
-      return true;
-   } else {
-      return false
-   }
+   return num === Math.floor(num);
 }
 
 function fizzBuzz(num) {
@@ -175,9 +170,9 @@ function esPrimo(num) {
       if (num % i === 0) {
          return false;
       }
-   }
-
+   } else {
    return true;
+   }
 }
 
 function esVerdadero(valor) {
@@ -207,7 +202,7 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
-   let contador = 0;
+   var contador = 0;
     
    do {
        num += 5;
